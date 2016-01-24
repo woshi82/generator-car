@@ -1,0 +1,25 @@
+{
+  "name": "generator-car",
+  "version": "0.0.1",
+  "description": "",
+  "main": "app/index.js",
+  "files": [
+    "generators"
+  ],
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "yanling zeng",
+  "license": "ISC",
+  "dependencies": {
+    "chalk": "^1.1.1",
+    "lodash": "^3.10.1",
+    "yeoman-generator": "^0.20.3"
+  },
+  "peerDependencies": {
+    "fis3": "^3.0.0",
+    "fis3-parser-less": "^2.5.3",
+    "fis-prepackager-i18n": "^0.1.1",
+    "fis-prepackager-browserify": "^0.1.2"
+  }
+}
