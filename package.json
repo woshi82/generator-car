@@ -9,7 +9,20 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "yanling zeng",
+  "engines": {
+    "node": ">=0.12.0"
+  },
+  
+  "author":{
+    "name":"yanling zeng",
+    "url":"https://github.com/woshi82"
+
+  } ,
+  <% if (gitAddress) { %>
+  "car": {
+    "git": "<%= gitAddress %>"
+  },
+  <% } %>
   "license": "ISC",
   "dependencies": {
     "chalk": "^1.1.1",

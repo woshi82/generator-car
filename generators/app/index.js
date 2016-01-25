@@ -23,7 +23,7 @@ module.exports = generators.Base.extend({
             var PACKAGE_JSON_PATH = './package.json';
             var packageContent = this.fs.readJSON(PACKAGE_JSON_PATH);
             defaultName = packageContent.name;
-            defaultGitHost = packageContent.act.git;
+            defaultGitHost = packageContent.car.git;
         } catch (e) {
         }
 
@@ -55,7 +55,7 @@ module.exports = generators.Base.extend({
         this.copy('fis-conf.js', 'fis-conf.js');
         this.copy('jshintrc', '.jshintrc');
 
-        this.directory('fis', 'fis');
+     
         this.directory('server', 'server');
 
         this.i18n = DEFAULT_I18N;
@@ -77,9 +77,9 @@ module.exports = generators.Base.extend({
             '\n' +
             chalk.cyan('Tips ') +
             'Use `' + 
-            chalk.green('yo act:view <view-name>') +
+            chalk.green('yo car:view <view-name>') +
             '` to create views!\n     Use `' + 
-            chalk.green('yo act:cmp new <cmp-name>') +
+            chalk.green('yo car:cmp new <cmp-name>') +
             '` to create components!'
         );
     }

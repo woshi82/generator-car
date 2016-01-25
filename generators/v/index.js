@@ -11,7 +11,7 @@ module.exports = generators.Base.extend({
     logVersion: function () {
         var pkg = require('../../package.json');
         this.log(
-            chalk.cyan(pkg.name),
+            chalk.red(pkg.name),
             pkg.version
         );
         this.spawnCommand('npm', [

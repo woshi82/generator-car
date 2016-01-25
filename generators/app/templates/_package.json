@@ -1,14 +1,14 @@
 {
   "name": "<%= actName %>",
   "version": "0.0.1",
-  "description": "UC Activity <%= actName %>",
+  "description": "car Activity <%= actName %>",
   "main": "server/app.js",
   "private": true,
   "scripts": {
-    "watch": "scrat server clean; scrat release -cwL",
-    "start": "scrat server start",
-    "release": "scrat release -cpd ../",
-    "ci": "npm i; npm i bower; node_modules/bower/bin/bower install; scrat release -compd ../"
+    "watch": "fis3 server clean; fis3 release -cwL",
+    "start": "fis3 server start",
+    "release": "fis3 release -cpd ../",
+    "ci": "npm i; npm i bower; node_modules/bower/bin/bower install; fis3 release -compd ../"
   },
   "keywords": [
     "activity",
@@ -19,13 +19,14 @@
     "email": "<%= gitEmail %>"
   },
   <% if (gitAddress) { %>
-  "act": {
+  "car": {
     "git": "<%= gitAddress %>"
   },
   <% } %>
   "dependencies": {},
   "devDependencies": {
     "express": "^4.13.3",
-    "body-parser": "^1.14.1"
+    "body-parser": "^1.14.1",
+    "path": "^0.12.7"
   }
 }
